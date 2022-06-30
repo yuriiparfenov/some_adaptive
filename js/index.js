@@ -76,6 +76,7 @@ emailInput.addEventListener('input', onInput);
 formButtonSubmit.addEventListener('click', (e) => {
   e.preventDefault();
   if (telInput.value.length === 17 && emailFlag) {
+    modalForm.classList.add('visually-hidden');
     alert('Form sucsess submit');
   }
 })
